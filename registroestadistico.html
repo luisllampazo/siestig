@@ -2,9 +2,187 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+	<style>
+	
+.table tr {
+    cursor: pointer;
+}
+.hiddenRow {
+    padding: 0 4px !important;
+    background-color: #eeeeee;
+}
 
-<body>
-</body>
+
+	</style>
+<title>Reporte Estadisitico</title>
+</head>
+	<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12 hedding pb-2">
+			  <h2> Investigaciones</h2>
+			</div>
+			<div class="col-lg-12">
+				<table class="table table-sm table-bordered table-hover" style="border-collapse:collapse;">
+				    <thead>
+				        <tr>
+				            <th>No HT.</th>
+				            <th>Ubigeo</th>
+				            <th>Oficina de Disciplina</th>
+				            <th>Clasificacion</th>
+				            <th>Debit</th>
+				            <th>Balance</th>
+				        </tr>
+				    </thead>
+				    <tbody>
+			    		<tr colspan="6" data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+				            <td>201920266446</td>
+				            <td>LIMA - LIMA - LIMA</td>
+				            <td>OD - 14</td>
+				            <td>
+								<label class="badge badge-info">Ebriedad</label>
+								<label class="badge badge-info">Ebriedad</label>
+							</td>
+				            <td> - </td>
+				            <td>$150.00</td>
+				        </tr>
+				        <tr>
+				            <td colspan="6" class="hiddenRow" style="display: none;">
+					            <div class="accordian-body collapse p-1 font-italic small" id="demo1">
+									<p>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO : <span class="badge badge-info">MG-13</span></p>
+					            	<p>No : <span>1</span></p>
+					            	<p>Date : <span>12 Jan 2018</span> </p>
+					            	<p>Description : <span>Good</span> </p>
+					            	<p>Credit : <span>$150.00</span> </p>
+					            	<p>Debit : <span></span></p>
+					            	<p>Balance : <span>$150.00</span></p>
+					        	</div> 
+				        	</td> 
+				        </tr>
+				        <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
+				            <td>2</td>
+				            <td>12 Jan 2018</td>
+				            <td>Good</td>
+				            <td>$11.00</td>
+				            <td> - </td>
+				            <td>$161.00</td>
+				        </tr>
+				        <tr>
+				            <td colspan="6" class="hiddenRow" style="display: none;">
+				            	<div id="demo2" class="accordian-body collapse p-3">
+				            		<p>No : <span>2</span></p>
+					            	<p>Date : <span>12 Jan 2018</span> </p>
+					            	<p>Description : <span>Good</span> </p>
+					            	<p>Credit : <span>$150.00</span> </p>
+					            	<p>Debit : <span></span></p>
+					            	<p>Balance : <span>$150.00</span></p>
+				            	</div>
+				            </td>
+				        </tr>
+						
+				        <tr data-toggle="collapse" data-target="#demo3" class="accordion-toggle">
+				            <td>3</td>
+				            <td>12 Jan 2018</td>
+				            <td>Good</td>
+				            <td>$500.00</td>
+				            <td> - </td>
+				            <td>$661.00</td>
+				        </tr>
+				        <tr>
+				            <td colspan="6"  class="hiddenRow" style="display: none;">
+				            	<div id="demo3" class="accordian-body collapse p-3">
+				            		<p>No : <span>3</span></p>
+					            	<p>Date : <span>12 Jan 2018</span> </p>
+					            	<p>Description : <span>Good</span> </p>
+					            	<p>Credit : <span>$150.00</span> </p>
+					            	<p>Debit : <span></span></p>
+					            	<p>Balance : <span>$150.00</span></p>
+				            	</div>
+				            </td>
+				        </tr>
+
+				        <tr data-toggle="collapse" data-target="#demo4" class="accordion-toggle">
+				            <td>4</td>
+				            <td>12 Jan 2018</td>
+				            <td>Good</td>
+				            <td>$500.00</td>
+				            <td> - </td>
+				            <td>$661.00</td>
+				        </tr>
+				        <tr>
+				            <td colspan="6"  class="hiddenRow" style="display: none;">
+				            	<div id="demo4" class="accordian-body collapse p-3">
+				            		<p>No : <span>4</span></p>
+					            	<p>Date : <span>12 Jan 2018</span> </p>
+					            	<p>Description : <span>Good</span> </p>
+					            	<p>Credit : <span>$150.00</span> </p>
+					            	<p>Debit : <span></span></p>
+					            	<p>Balance : <span>$150.00</span></p>
+				            	</div>
+				            </td>
+				        </tr>
+
+				        <tr data-toggle="collapse" data-target="#demo5" class="accordion-toggle">
+				            <td>5</td>
+				            <td>12 Jan 2018</td>
+				            <td>Good</td>
+				            <td>$500.00</td>
+				            <td> - </td>
+				            <td>$661.00</td>
+				        </tr>
+				        <tr>
+				            <td colspan="6"  class="hiddenRow" style="display: none;">
+				            	<div id="demo5" class="accordian-body collapse p-3">
+				            		<p>No : <span>5</span></p>
+					            	<p>Date : <span>12 Jan 2018</span> </p>
+					            	<p>Description : <span>Good</span> </p>
+					            	<p>Credit : <span>$150.00</span> </p>
+					            	<p>Debit : <span></span></p>
+					            	<p>Balance : <span>$150.00</span></p>
+				            	</div>
+				            </td>
+				        </tr>		
+				    </tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+		
+		
+		<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
 </html>

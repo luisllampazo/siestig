@@ -1,0 +1,590 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+	<style>
+
+.hiddenRow {
+    padding: 0 4px !important;
+    background-color: #eeeeee;
+}
+
+
+	</style>
+<title>Reporte Estadisitico</title>
+</head>
+	<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 hedding pb-2">
+			  <h2> Investigaciones</h2>
+			</div>
+			<div class="col-lg-12 table-responsive">
+				<table id="tabla-registros" class="table table-sm table-bordered table-hover small" style="border-collapse:collapse;">
+				    <thead>
+				        <tr class="text-center">
+							<th><i class="fa fa-plus"></i></th>
+				            <th>No HT.</th>
+							<th>DOC de Accion</th>
+							<th>Nro DOC de Accion</th>
+							<th>Tipo Procedimiento</th>
+							<th>DNI Denunciante</th>
+							<th>Denunciante</th>
+							<th>Fecha Hecho</th>
+				            <th>Fecha Denuncia</th>
+				            <th>Ubigeo Hecho</th>
+							<th>MACREPOL</th>
+							<th>REGPOL</th>
+							<th>COMI</th>
+				            <th>Oficina de Disciplina</th>
+							<th>Fecha de Ingreso (OD)</th>
+				            <th>Clasificacion</th>
+				            <th>Motivo de la Denuncia</th>
+							<th>Documento de Acciones Previas</th>
+							<th>Instructor</th>
+							<th>Auxiliar</th>
+							<th>Estado</th>
+				        </tr>
+				    </thead>
+				    <tbody>
+			    		<tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+							<td class="text-center"><button class="btn btn-sm show-detail"> <i class="fa fa-plus"></i></button></td>
+				            <td>201920266446</td>
+							<td>Nota Informativa</td>
+							<td>NI 001-2020-XXXXXSXXXX</td>
+							<td>Ordinario</td>
+							<td>43795932</td>
+							<td>LUIS RICARDO LLAMPAZO MANDAMIENTO</td>
+							<td>28/05/2020</td>
+							<td>30/05/2020</td>
+				            <td>LIMA - LIMA - LA VICTORIA</td>
+							<td>LIMA</td>
+							<td>LIMAS</td>
+							<td>COM_APOLO</td>
+				            <td>OD - 14</td>
+							<td>31/05/2020</td>
+				            <td>
+								<label class="badge badge-info">Ebriedad</label>
+								<label class="badge badge-info">Ebriedad</label>
+							</td>
+				            <td> <button type="button">Ebriedad</button></td>
+				            <td>RES N°002-2020-OD14-DIRINV/IGPNP (05/06/2020)</td>
+							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+							<td>PENDIENTE (EN INVESTIGACION)</td>
+							
+				        </tr>
+				        <tr>
+				            <td colspan="20" class="hiddenRow" style="display: none;">
+					            <div class="accordian-body collapse p-1 font-italic small" id="demo1">
+									<table class="table table-success">
+										<thead>
+											<tr>
+											<th>CIP</th>
+											<th>DNI</th>
+											<th>GRADO</th>
+											<th>APELLIDOS Y NOMBRES</th>
+											<th>UNIDAD</th>
+											<th>SITUACION</th>
+											<th>CLASIFICACION</th>
+											
+										</tr>
+										</thead>
+										<tbody>
+											<tr>
+											<td>00391305</td>
+											<td>43795932</td>
+											<td>CAP S</td>
+											<td> LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td> UNITIC_SEC_IGPNP</td>
+											<td> ACTIVIDAD</td>
+											<td> <label class="badge badge-light">COHECHO</label></td>
+											
+										</tr>
+											<tr>
+											<td>00391305</td>
+											<td>43795932</td>
+											<td>CAP S</td>
+											<td> LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td> UNITIC_SEC_IGPNP</td>
+											<td> ACTIVIDAD</td>
+											<td> <label class="badge badge-light">EBRIEDAD</label></td>
+											
+										</tr>
+										</tbody>
+									</table>
+									
+					        	</div> 
+				        	</td> 
+				        </tr>
+						<tr colspan="6" data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+				            <td>201920266446</td>
+							<td>Nota Informativa</td>
+							<td>NI 001-2020-XXXXXSXXXX</td>
+							<td>Ordinario</td>
+							<td>43795932</td>
+							<td>LUIS RICARDO LLAMPAZO MANDAMIENTO</td>
+							<td>28/05/2020</td>
+							<td>30/05/2020</td>
+				            <td>LIMA - LIMA - LA VICTORIA</td>
+							<td>LIMA</td>
+							<td>LIMAS</td>
+							<td>COM_APOLO</td>
+				            <td>OD - 14</td>
+							<td>31/05/2020</td>
+				            <td>
+								<label class="badge badge-info">Ebriedad</label>
+								<label class="badge badge-info">Ebriedad</label>
+							</td>
+				            <td> <button type="button">Ebriedad</button></td>
+				            <td>RES N°002-2020-OD14-DIRINV/IGPNP (05/06/2020)</td>
+							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+							<td>INICIO PDA</td>
+							
+				        </tr>
+				        <tr>
+				            <td colspan="20" class="hiddenRow" style="display: none;">
+					            <div class="accordian-body collapse p-1 font-italic small" id="demo1">
+									<table class="table table-success">
+										<thead>
+											<tr>
+											<th>CIP</th>
+											<th>DNI</th>
+											<th>GRADO</th>
+											<th>APELLIDOS Y NOMBRES</th>
+											<th>UNIDAD</th>
+											<th>SITUACION</th>
+											<th>RESOLUCION DE PDA</th>
+											<th>CONSTACIA DE ENTERADO</th>
+											<th>INFRACCIONES</th>
+												<th>MEDIDA PREVENTIVA</th>
+											<th>RESOLUCIÓN DE MEDIDA PREVENTIVA</th>
+											
+										</tr>
+										</thead>
+										<tbody>
+											<tr>
+											<td>00391305</td>
+											<td>43795932</td>
+											<td>CAP S</td>
+											<td> LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td> UNITIC_SEC_IGPNP</td>
+											<td> ACTIVIDAD</td>
+											<td> RESOLUCION 001-2020-XXXXXXXXXX</td>
+											<td> CONSTANCIA 001-2020-XXXXXXXXXX</td>
+											<td> <label class="badge badge-light">MG-11</label>
+												<label class="badge badge-light">MG-12</label>
+												<label class="badge badge-light">MG-13</label>
+												</td>
+											<td></td>
+												<td></td>
+										</tr>
+											<tr>
+											<td>00391305</td>
+											<td>43795932</td>
+											<td>CAP S</td>
+											<td> LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td> UNITIC_SEC_IGPNP</td>
+											<td> ACTIVIDAD</td>
+											<td> RESOLUCION 001-2020-XXXXXXXXXX</td>
+												<td> </td>
+												<td> <label class="badge badge-light">MG-11</label>
+												<label class="badge badge-light">MG-12</label>
+												<label class="badge badge-light">MG-13</label>
+												</td>
+											<td></td>
+												<td></td>
+										</tr>
+										</tbody>
+									</table>
+									
+					        	</div> 
+				        	</td> 
+				        </tr>
+						<tr colspan="6" data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+				            <td>201920266446</td>
+							<td>Nota Informativa</td>
+							<td>NI 001-2020-XXXXXSXXXX</td>
+							<td>Ordinario</td>
+							<td>43795932</td>
+							<td>LUIS RICARDO LLAMPAZO MANDAMIENTO</td>
+							<td>28/05/2020</td>
+							<td>30/05/2020</td>
+				            <td>LIMA - LIMA - LA VICTORIA</td>
+							<td>LIMA</td>
+							<td>LIMAS</td>
+							<td>COM_APOLO</td>
+				            <td>OD - 14</td>
+							<td>31/05/2020</td>
+				            <td>
+								<label class="badge badge-info">Ebriedad</label>
+								<label class="badge badge-info">Ebriedad</label>
+							</td>
+				            <td> <button type="button">Ebriedad</button></td>
+				            <td>RES N°002-2020-OD14-DIRINV/IGPNP (05/06/2020)</td>
+							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+							<td>INICIO PDA (MEDIDA PREVENTIVA)</td>
+							
+				        </tr>
+				        <tr>
+				            <td colspan="20" class="hiddenRow" style="display: none;">
+					            <div class="accordian-body collapse p-1 font-italic small" id="demo1">
+									<table class="table table-success">
+										<thead>
+											<tr>
+											<th>CIP</th>
+											<th>DNI</th>
+											<th>GRADO</th>
+											<th>APELLIDOS Y NOMBRES</th>
+											<th>UNIDAD</th>
+											<th>SITUACION</th>
+											<th>RESOLUCION DE PDA</th>
+											<th>CONSTACIA DE ENTERADO</th>
+											<th>INFRACCIONES</th>
+											<th>MEDIDA PREVENTIVA</th>
+											<th>RESOLUCIÓN DE MEDIDA PREVENTIVA</th>
+										</tr>
+										</thead>
+										<tbody>
+											<tr>
+											<td>00391305</td>
+											<td>43795932</td>
+											<td>CAP S</td>
+											<td> LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td> UNITIC_SEC_IGPNP</td>
+											<td> ACTIVIDAD</td>
+											<td> RESOLUCION 001-2020-XXXXXXXXXX</td>
+											<td> CONSTANCIA 001-2020-XXXXXXXXXX</td>
+											<td> <label class="badge badge-light">MG-11</label>
+												<label class="badge badge-light">MG-12</label>
+												<label class="badge badge-light">MG-13</label>
+												</td>
+												<td></td>
+												<td></td>
+											
+										</tr>
+											<tr>
+											<td>00391305</td>
+											<td>43795932</td>
+											<td>CAP S</td>
+											<td> LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td> UNITIC_SEC_IGPNP</td>
+											<td> ACTIVIDAD</td>
+											<td> RESOLUCION 001-2020-XXXXXXXXXX</td>
+											<td> CONSTANCIA 001-2020-XXXXXXXXXX</td>
+											<td> <label class="badge badge-light">MG-11</label>
+												<label class="badge badge-light">MG-12</label>
+												<label class="badge badge-light">MG-13</label>
+											</td>
+											<td>SUSPENSION TEMPORAL DEL SERVICIO</td>
+												<td>RESOLUCION 001-2020-XXXXXXXXXX</td>
+										</tr>
+										</tbody>
+									</table>
+									
+					        	</div> 
+				        	</td> 
+				        </tr>
+				        <tr>
+				            <td colspan="20" class="hiddenRow" style="display: none;">
+					            <div class="accordian-body collapse p-1 font-italic small" id="demo1">
+									<table class="table table-success">
+										<thead>
+											<tr>
+											<th>CIP</th>
+											<th>DNI</th>
+											<th>GRADO</th>
+											<th>APELLIDOS Y NOMBRES</th>
+											<th>UNIDAD</th>
+											<th>SITUACION</th>
+											<th>CLASIFICACION</th>
+											
+										</tr>
+										</thead>
+										<tbody>
+											<tr>
+											<td>00391305</td>
+											<td>43795932</td>
+											<td>CAP S</td>
+											<td> LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td> UNITIC_SEC_IGPNP</td>
+											<td> ACTIVIDAD</td>
+											<td> <label class="badge badge-light">COHECHO</label></td>
+											
+										</tr>
+											<tr>
+											<td>00391305</td>
+											<td>43795932</td>
+											<td>CAP S</td>
+											<td> LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td> UNITIC_SEC_IGPNP</td>
+											<td> ACTIVIDAD</td>
+											<td> <label class="badge badge-light">EBRIEDAD</label></td>
+											
+										</tr>
+										</tbody>
+									</table>
+									
+					        	</div> 
+				        	</td> 
+				        </tr>
+						<tr colspan="6" data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+				            <td>201920266446</td>
+							<td>Nota Informativa</td>
+							<td>NI 001-2020-XXXXXSXXXX</td>
+							<td>Ordinario</td>
+							<td>43795932</td>
+							<td>LUIS RICARDO LLAMPAZO MANDAMIENTO</td>
+							<td>28/05/2020</td>
+							<td>30/05/2020</td>
+				            <td>LIMA - LIMA - LA VICTORIA</td>
+							<td>LIMA</td>
+							<td>LIMAS</td>
+							<td>COM_APOLO</td>
+				            <td>OD - 14</td>
+							<td>31/05/2020</td>
+				            <td>
+								<label class="badge badge-info">Ebriedad</label>
+								<label class="badge badge-info">Ebriedad</label>
+							</td>
+				            <td> <button type="button">Ebriedad</button></td>
+				            <td>RES N°002-2020-OD14-DIRINV/IGPNP (05/06/2020)</td>
+							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+							<td> ARCHIVADO</td>
+							
+				        </tr>
+				        <tr>
+				            <td colspan="20" class="hiddenRow" style="display: none;">
+					            <div class="accordian-body collapse p-1 font-italic small" id="demo1">
+									<table class="table table-success">
+										<thead>
+											<tr>
+											<th>CIP</th>
+											<th>DNI</th>
+											<th>GRADO</th>
+											<th>APELLIDOS Y NOMBRES</th>
+											<th>UNIDAD</th>
+											<th>SITUACION</th>
+											<th>RESOLUCION DE PDA</th>
+											<th>CONSTACIA DE ENTERADO</th>
+											<th>INFRACCIONES</th>
+											
+										</tr>
+										</thead>
+										<tbody>
+											<tr>
+											<td>00391305</td>
+											<td>43795932</td>
+											<td>CAP S</td>
+											<td> LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td> UNITIC_SEC_IGPNP</td>
+											<td> ACTIVIDAD</td>
+											<td> RESOLUCION 001-2020-XXXXXXXXXX</td>
+											<td> CONSTANCIA 001-2020-XXXXXXXXXX</td>
+											<td> <label class="badge badge-light">MG-11</label>
+												<label class="badge badge-light">MG-12</label>
+												<label class="badge badge-light">MG-13</label>
+												</td>
+											
+										</tr>
+											<tr>
+											<td>00391305</td>
+											<td>43795932</td>
+											<td>CAP S</td>
+											<td> LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td> UNITIC_SEC_IGPNP</td>
+											<td> ACTIVIDAD</td>
+											<td> RESOLUCION 001-2020-XXXXXXXXXX</td>
+												<td> </td>
+												<td> <label class="badge badge-light">MG-11</label>
+												<label class="badge badge-light">MG-12</label>
+												<label class="badge badge-light">MG-13</label>
+												</td>
+											
+										</tr>
+										</tbody>
+									</table>
+									
+					        	</div> 
+				        	</td> 
+				        </tr>
+				        <tr>
+				            <td colspan="20" class="hiddenRow" style="display: none;">
+					            <div class="accordian-body collapse p-1 font-italic small" id="demo1">
+									<table class="table table-success">
+										<thead>
+											<tr>
+											<th>CIP</th>
+											<th>DNI</th>
+											<th>GRADO</th>
+											<th>APELLIDOS Y NOMBRES</th>
+											<th>UNIDAD</th>
+											<th>SITUACION</th>
+											<th>CLASIFICACION</th>
+											
+										</tr>
+										</thead>
+										<tbody>
+											<tr>
+											<td>00391305</td>
+											<td>43795932</td>
+											<td>CAP S</td>
+											<td> LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td> UNITIC_SEC_IGPNP</td>
+											<td> ACTIVIDAD</td>
+											<td> <label class="badge badge-light">COHECHO</label></td>
+											
+										</tr>
+											<tr>
+											<td>00391305</td>
+											<td>43795932</td>
+											<td>CAP S</td>
+											<td> LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td> UNITIC_SEC_IGPNP</td>
+											<td> ACTIVIDAD</td>
+											<td> <label class="badge badge-light">EBRIEDAD</label></td>
+											
+										</tr>
+										</tbody>
+									</table>
+									
+					        	</div> 
+				        	</td> 
+				        </tr>
+						<tr colspan="6" data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+				            <td>201920266446</td>
+							<td>Nota Informativa</td>
+							<td>NI 001-2020-XXXXXSXXXX</td>
+							<td>Ordinario</td>
+							<td>43795932</td>
+							<td>LUIS RICARDO LLAMPAZO MANDAMIENTO</td>
+							<td>28/05/2020</td>
+							<td>30/05/2020</td>
+				            <td>LIMA - LIMA - LA VICTORIA</td>
+							<td>LIMA</td>
+							<td>LIMAS</td>
+							<td>COM_APOLO</td>
+				            <td>OD - 14</td>
+							<td>31/05/2020</td>
+				            <td>
+								<label class="badge badge-info">Ebriedad</label>
+								<label class="badge badge-info">Ebriedad</label>
+							</td>
+				            <td> <button type="button">Ebriedad</button></td>
+				            <td>RES N°002-2020-OD14-DIRINV/IGPNP (05/06/2020)</td>
+							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+							<td>CAP S LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+							<td>PASE A ID</td>
+							
+				        </tr>
+				        <tr>
+				            <td colspan="20" class="hiddenRow" style="display: none;">
+					            <div class="accordian-body collapse p-1 font-italic small" id="demo1">
+									<table class="table table-success">
+										<thead>
+											<tr>
+											<th>CIP</th>
+											<th>DNI</th>
+											<th>GRADO</th>
+											<th>APELLIDOS Y NOMBRES</th>
+											<th>UNIDAD</th>
+											<th>SITUACION</th>
+											<th>RESOLUCION DE PDA</th>
+											<th>CONSTACIA DE ENTERADO</th>
+											<th>INFRACCIONES DE INICIO</th>
+											<th>INFRACCIONES COMETIDAS</th>
+											<th>RECOMENDACION</th>
+											
+										</tr>
+										</thead>
+										<tbody>
+											<tr>
+											<td>00391305</td>
+											<td>43795932</td>
+											<td>CAP S</td>
+											<td> LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td> UNITIC_SEC_IGPNP</td>
+											<td> ACTIVIDAD</td>
+											<td> RESOLUCION 001-2020-XXXXXXXXXX</td>
+											<td> CONSTANCIA 001-2020-XXXXXXXXXX</td>
+											<td> <label class="badge badge-light">MG-11</label>
+												<label class="badge badge-light">MG-12</label>
+												<label class="badge badge-light">MG-13</label>
+											</td>
+											<td> 
+												<label class="badge badge-light">MG-13</label>
+											</td>
+											<td> SANCIONAR</td>
+											
+										</tr>
+											<tr>
+											<td>00391305</td>
+											<td>43795932</td>
+											<td>CAP S</td>
+											<td> LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+											<td> UNITIC_SEC_IGPNP</td>
+											<td> ACTIVIDAD</td>
+											<td> RESOLUCION 001-2020-XXXXXXXXXX</td>
+												<td> </td>
+												<td> <label class="badge badge-light">MG-11</label>
+												<label class="badge badge-light">MG-12</label>
+												<label class="badge badge-light">MG-13</label>
+												</td>
+												<td></td>
+											<td> ABSOLVER</td>
+										</tr>
+										</tbody>
+									</table>
+									
+					        	</div> 
+				        	</td> 
+				        </tr>
+				        
+				        
+				    </tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+		
+		
+		<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+</html>

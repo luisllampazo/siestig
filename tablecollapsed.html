@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<title>Table Collapsed</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="table-responsive">
+					<table id="tabla-registros" class="table table-striped table-bordered table-sm small">
+						<thead>
+							<tr>
+								<th>boton</th>
+								<th>col 1</th>
+								<th>col 2</th>
+								<th>col 3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><a class="btn-adddetalle"><em class="fa fa-plus"></em></a></td>
+								<td>Dato 1 </td>
+								<td>Dato 2</td>
+								<td>Dato 3</td>
+							</tr>
+							<tr>
+								<td>
+									<a class="btn-adddetalle"> <i class="fa fa-plus"></i></a>
+								</td>
+								<td>Dato 1 </td>
+								<td>Dato 2</td>
+								<td>Dato 3</td>
+							</tr>
+							<tr>
+								<td>
+									<a class="btn-adddetalle"> <i class="fa fa-plus"></i></a>
+								</td>
+								<td>Dato 1 </td>
+								<td>Dato 2</td>
+								<td>Dato 3</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js" ></script>
+<script src="js/bootstrap.min.js"></script>
+	<script>
+		 $('#tabla-registros tbody').on('click','.btn-adddetalle',function(){
+			 $('.row-detalle').remove();
+			 var rowIndex = $('#tabla-registros tr').index($(this).closest('tr'));
+			 var markup = "<tr class='row-detalle'><td colspan='4'>Texto de prueba</td></tr>";
+			 
+             $('#tabla-registros > tbody > tr').eq(rowIndex-1).after(markup);
+			 $('#tabla-registros > tbody > tr').eq(rowIndex).hide().fadeIn(1000);
+			 $(this).find('i').removeClass('fa-plus');
+			 $(this).find('i').addClass('fa-minus');
+			 $('.btn-removedetalle').find('i').addClass('fa-plus');
+			 $('.btn-removedetalle').find('i').removeClass('fa-minus');
+			 $('.btn-removedetalle').addClass('btn-adddetalle');
+			 $('.btn-removedetalle').removeClass('btn-removedetalle');
+			  
+			 $(this).removeClass('btn-adddetalle');
+			 $(this).addClass('btn-removedetalle');
+        });
+		 $('#tabla-registros tbody').on('click','.btn-removedetalle',function(){
+			 //var rowIndex = $('#tableId tr').index($(this).closest('tr'));
+			 var rowIndex = $('#tabla-registros tr').index($(this).closest('tr'));
+			 //alert(rowIndex);
+            $('#tabla-registros > tbody > tr').eq(rowIndex).remove();
+			 $(this).find('i').removeClass('fa-minus');
+			 $(this).find('i').addClass('fa-plus');
+			 $(this).addClass('btn-adddetalle');
+			 $(this).removeClass('btn-removedetalle');
+        });
+		function updatebotonestabla()
+		{
+			
+		}
+	</script>
+</body>
+</html>

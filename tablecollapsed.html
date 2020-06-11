@@ -23,6 +23,7 @@
 							<tr class="text-center">
 								<th class="align-middle">Fecha</th>
 								<th class="align-middle">Ubigeo</th>
+								<th class="align-middle">Jurisdiccion Policial</th>
 								
 							</tr>
 						</thead>
@@ -64,7 +65,7 @@
 	<script>
 		 $('#tabla-registros tbody').on('click','.btn-adddetalle',function(){
 			 $('.row-detalle').remove();
-			 var rowIndex = $('#tabla-registros tr').index($(this).closest('tr'));
+			 var rowIndex = $('#tabla-registros tr').index($(this).closest('tr'))-1;
 			 var markup = "<tr class='row-detalle'><td colspan='4'>Texto de prueba</td></tr>";
 			 
              $('#tabla-registros > tbody > tr').eq(rowIndex-1).after(markup);
@@ -81,7 +82,7 @@
         });
 		 $('#tabla-registros tbody').on('click','.btn-removedetalle',function(){
 			 //var rowIndex = $('#tableId tr').index($(this).closest('tr'));
-			 var rowIndex = $('#tabla-registros tr').index($(this).closest('tr'));
+			 var rowIndex = $('#tabla-registros tr').index($(this).closest('tr'))-1;
 			 //alert(rowIndex);
             $('#tabla-registros > tbody > tr').eq(rowIndex).remove();
 			 $(this).find('i').removeClass('fa-minus');

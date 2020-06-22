@@ -86,13 +86,14 @@ body {
      </div>
 	  <div class="row my-3">
 		  <div class="col-12">
-		  <h5>Denunciante</h5>
+		  <h5>Denunciante <small class="alert-danger">Efectivo Policial</small></h5>
 		  </div>
 	  <div class="col-md-2">
 	    <label>Tipo Documento</label>
 	    <select class="form-control">
 	  	  <option>D.N.I.</option>
-			  <option>C.I.</option>
+			  <option>C.E.</option>
+			<option>P.T.P</option>
 			  <option>Anonimo</option>
 		  </select>
 		  </div>
@@ -160,7 +161,39 @@ body {
 		    <select class="form-control" multiple></select>
 	    </div>
 </div>
-	  <div class="row">
+	  <div class="row mt-3">
+		 <div class="col-12">
+		   <h5>Denunciados</h5>
+		 </div>
+	  </div>
+	  <div class="row my-2">
+		<div class="col-md-2">
+		<label>CIP</label>
+		<input class="form-control">
+		</div>
+		  <div class="col-md-2">
+		    <label>DNI</label>
+		    <input class="form-control">
+		</div>
+		  <div class="col-md-2">
+		<label>APE PATERNO</label>
+		<input class="form-control">
+		</div>
+		  <div class="col-md-2">
+		<label>APE MATERNO</label>
+		<input class="form-control">
+		</div>
+		<div class="col-md-2">
+		<label>NOMBRES</label>
+		<input class="form-control">
+		</div>
+		
+	    <div class="col-md-2">
+		<label>Motivo</label>
+		<button class="form-control btn btn-primary"><i class="fa fa-search"></i> Buscar</button>
+		</div>
+	 </div>
+	  <div class="row my-3">
 		  <div class="col-12 table-responsive">
 		  <table class="table table-hover table-bordered table-sm">
 			  <thead class="small">
@@ -171,8 +204,7 @@ body {
 					  <th>Apellidos y Nombres</th>
 					  <th>Unida</th>
 					  <th>Situacion</th>
-					  <th>Clasificación</th>
-					  <th class="text-center"><i class="fa fa-user-times"></i></th>
+					  <th class="text-center"><i class="fa fa-cogs"></i></th>
 				  </tr>
 			  </thead>
 			  <tbody>
@@ -183,12 +215,8 @@ body {
 					  <td class="small align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
 					  <td class="small align-middle">IGPNP_UNITIC</td>
 					  <td class="small align-middle">ACTIVIDAD</td>
-					  <td class="align-middle">
-						  <label class="badge badge-info">Ebriedad</label>
-						  <label class="badge badge-info">Violencia Familiar</label>
-				  	  </td>
-				  		<td class="text-center align-middle">
-				  <button class="btn btn-secondary btn-sm"><i class="fa fa-user-times"></i></button>
+					  <td class="text-center align-middle">
+				  <button class="btn btn-primary btn-sm"><i class="fa fa-level-down"></i></button>
 				  </td>
 				  </tr>
 				  <tr>
@@ -198,14 +226,55 @@ body {
 					  <td class="small align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
 					  <td class="small align-middle">IGPNP_UNITIC</td>
 					  <td class="small align-middle">ACTIVIDAD</td>
-					  <td class="align-middle">
-						  <label class="badge badge-info">Ebriedad</label>
-						  <label class="badge badge-info">Violencia Familiar</label>
-				  	  </td>
-				  		<td class="text-center align-middle">
-				  <button class="btn btn-secondary btn-sm"><i class="fa fa-user-times"></i></button>
+					  <td class="text-center align-middle">
+				  <button class="btn btn-primary btn-sm"><i class="fa fa-level-down"></i></button>
 				  </td>
 				  </tr>
+				  
+			  </tbody>
+			  </table>
+		  </div>
+	  </div>
+	 <div class="row">
+		  <div class="col-12 table-responsive">
+		  <table class="table table-hover table-bordered table-sm">
+			  <thead class="small">
+				  <tr>
+					  <th>CIP</th>
+					  <th>DNI</th>
+					  <th>Grado</th>
+					  <th>Apellidos y Nombres</th>
+					  <th>Unida</th>
+					  <th>Situacion</th>
+					  <th class="text-center"><i class="fa fa-cogs"></i></th>
+				  </tr>
+			  </thead>
+			  <tbody>
+			  <tr>
+					  <td class="small align-middle">00391305</td>
+					  <td class="small align-middle">43795932</td>
+					  <td class="small align-middle">CAPITAN S</td>
+					  <td class="small align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+					  <td class="small align-middle">IGPNP_UNITIC</td>
+					  <td class="small align-middle">ACTIVIDAD</td>
+					  
+				  		<td class="text-center align-middle">
+				  <button class="btn btn-primary btn-sm"><i class="fa fa-level-up"></i></button>
+				  </td>
+				  </tr>
+				  <tr>
+					  <td class="small align-middle">00391305</td>
+					  <td class="small align-middle">43795932</td>
+					  <td class="small align-middle">CAPITAN S</td>
+					  <td class="small align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+					  <td class="small align-middle">IGPNP_UNITIC</td>
+					  <td class="small align-middle">ACTIVIDAD</td>
+					  
+				  		<td class="text-center align-middle">
+				  <button class="btn btn-primary btn-sm"><i class="fa fa-level-up"></i></button>
+				  </td>
+				  </tr>
+				  
 			  </tbody>
 			  </table>
 		  </div>

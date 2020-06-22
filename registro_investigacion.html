@@ -46,7 +46,8 @@ body {
   <div class="card-header">
 	  <div class="row align-items-center">
       <div class="col-md-9 h5 my-2">
-        <div class="text-info">Invesigación Nro: <label>20205566550</label></div>
+        <div class="text-info">Investigación Nro:
+<label>20205566550</label> <small class="alert-danger">Procedimiento Sumario (Medida Preventiva)</small></div>
 		<small>HT: 2020565465546</small>  
 		
       </div>
@@ -81,11 +82,11 @@ body {
 			 </thead>
 			 <tbody>
 				 <tr>
-				 	<td class="align-middle">AUXILIAR</td>
+				 	<td class="align-middle">INSTRUCTOR</td>
 					<td class="align-middle">00391305</td>
 					<td class="align-middle">COMANDANTE</td>
 					<td class="align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
-					<td class="align-middle text-center"><button class="btn btn-danger btn-sm"><i class="fa fa-user-times"></i></button></td>
+					<td class="align-middle text-center"><button class="btn btn-danger btn-sm" ><i class="fa fa-user-times"></i></button></td>
 				 </tr>
 				 <tr>
 				 	<td class="align-middle">AUXILIAR</td>
@@ -98,17 +99,76 @@ body {
 		  </table> 
 		 </div>
 	  </div>
-	  <div class="row">
+	  <div class="row mt-3">
 		  <div class="col-md-6 pt-2">
 		    <h5>Avance de la Investigación</h5>
 		  </div>
+	  </div>
+	  <div class="row">
+		<div class="col-md-3">
+		<label>Etapa de la Investigacion</label>
+			<select class="form-control">
+				<option>Acciones Previas</option>
+				<option>Proc. Admin. Disc</option>
+			</select>
+		</div>
+		
+		<div class="col-md-3">
+			<label>Tipo de Documento</label>
+		<select class="form-control">
+			<option>Resolucion</option>
+			<option>Informe</option>
+			<option>Oficio</option>
+		  </select>
+		</div>
+	
+		<div class="col-md-3">
+		  <label>Nro Documento</label>
+		  <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="####" aria-label="####" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <select class="form-control">
+		<option>2020</option>
+		<option>2019</option>
+	  </select>
+  </div>
+</div>
+		</div>
+		  <div class="col-md-3">
+
+			<label>Unidad</label>
+		<select class="form-control">
+			<option>Comandancia General</option>
+			</select>
+		</div>
+		<div class="col-md-3">
+		<label>Fecha Documento</label>
+		<input class="form-control" type="date">
+		</div>
+		  <div class="col-md-3">
+		    <label>Motivo</label>
+		    <select class="form-control">
+			<option>Inicio de Acciones Previas</option>
+			<option>Inicio de Procedimiento</option>
+			<option>Medida Preventiva</option>
+			<option>Informe AD</option>
+		  </select>
+		</div>
+		  <div class="col-md-3">
+		    <label class="text-white">.</label>
+		    <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="checkpersonal">
+    <label class="form-check-label" for="checkpersonal">Involucra Personal PNP</label>
+  </div>
+		</div>
+		  <div class="col-md-3">
+		    <label class="text-white">.</label>
+		    <button class="btn btn-outline-primary form-control"><i class="fa fa-file-o"></i> Agregar Registro</button>
+		</div>
 		  
-		  <div class="col-md-2 offset-md-2">
-		  <button class="btn btn-outline-primary form-control"><em class="fa fa-user-plus"></em> Auxiliar</button>
-		  </div>
-		  <div class="col-md-2 ">
-		  <button class="btn btn-outline-primary form-control"><i class="fa fa-user-plus"></i> Instructor</button>
-		  </div>
+     </div>
+	  
+	  <div class="row">
 	  <div class="col-12 table-responsive">
 		 <table class="table table-bordered table-sm table-striped table-hover small my-2 ">
 		  <thead>
@@ -126,124 +186,49 @@ body {
 					<td class="align-middle">Resolución</td>
 					<td class="align-middle">001-2020-DIRINV-OD15 (20/06/2020)</td>
 					<td class="align-middle">Inicio de Acciones Previas</td>
-					<td class="align-middle text-center"><button class="btn btn-danger btn-sm"><i class="fa fa-user-times"></i></button></td>
+					<td class="align-middle text-center">
+						
+						<button class="btn btn-danger btn-sm"><i class="fa fa-user-times"></i></button>
+					 </td>
 				 </tr>
 				 <tr>
 				 	<td class="align-middle"> P.A.D</td>
 					<td class="align-middle">Resolución</td>
 					<td class="align-middle">002-2020-DIRINV-OD15 (21/06/2020)</td>
 					<td class="align-middle">Inicio de Procedimiento</td>
-					<td class="align-middle text-center"><button class="btn btn-danger btn-sm"><i class="fa fa-user-times"></i></button></td>
+					<td class="align-middle text-center">
+					  <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-users"></i></button>
+						<button class="btn btn-danger btn-sm"><em class="fa fa-user-times"></em></button>
+				   </td>
 				 </tr>
 				 <tr>
 				 	<td class="align-middle"> P.A.D</td>
 					<td class="align-middle">Resolución</td>
 					<td class="align-middle">002-2020-DIRINV-OD15 (21/06/2020)</td>
 					<td class="align-middle">Medida Preventiva</td>
-					<td class="align-middle text-center"><button class="btn btn-danger btn-sm"><i class="fa fa-user-times"></i></button></td>
+					<td class="align-middle text-center">
+						<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#Modalmedidapreventiva"><em class="fa fa-users"></em></button>
+						<button class="btn btn-danger btn-sm"><i class="fa fa-user-times"></i></button>
+				   </td>
+				 </tr>
+				 <tr>
+				 	<td class="align-middle"> P.A.D</td>
+					<td class="align-middle">Informe</td>
+					<td class="align-middle">002-2020-DIRINV-OD15 (21/06/2020)</td>
+					<td class="align-middle"> Finalizacion de P.A.D</td>
+					<td class="align-middle text-center">
+						<button class="btn btn-primary btn-sm"><i class="fa fa-users"></i></button>
+						<button class="btn btn-danger btn-sm"><i class="fa fa-user-times"></i></button>
+				   </td>
 				 </tr>
 			 </tbody>
 		  </table> 
 	    </div>
 	  </div>
 	  
-<div class="row">
-		<div class="col-3">
-		<label>Etapa de la Investigacion</label>
-			<select class="form-control">
-				<option>Acciones Previas</option>
-				<option>Proc. Admin. Disc</option>
-			</select>
-		</div>
-		
-		<div class="col-md-3">
-			<label>Unidad</label>
-		<select class="form-control">
-			<option>Comandancia General</option>
-			</select>
-		</div>
-	
-		<div class="col-md-2">
-		<label>Fecha Registro</label>
-		<input class="form-control" type="date">
-		</div>
-     </div>
-	  <div class="row my-3">
-		  <div class="col-12">
-		  <h5>Denunciante</h5>
-		  </div>
-	  <div class="col-md-2">
-	    <label>Tipo Documento</label>
-	    <select class="form-control">
-	  	  <option>D.N.I.</option>
-			  <option>C.I.</option>
-			  <option>Anonimo</option>
-		  </select>
-		  </div>
-		  <div class="col-md-2">
-		    <label>Nro Documento</label>
-		    <input class="form-control">
-		  </div>
-		  <div class="col-md-2">
-		  <label>Nombres</label>
-		  <input class="form-control">
-		  </div>
-		  <div class="col-md-2">
-		  <label>Apellido Paterno</label>
-		  <input class="form-control">
-		  </div>
-		  <div class="col-md-2">
-		  <label>Apellido Materno</label>
-		  <input class="form-control">
-		  </div>
-		  <div class="col-md-2">
-		<label>Nacionalidad</label>
-		<select class="form-control">
-			  <option>Peruano</option>
-			  </select>
-		</div>
-	  </div>
-	  <div class="row my-3">
-		  <div class="col-12">
-		    <h5>Datos del Hecho</h5>
-		  </div>
-	  <div class="col-md-2 my-1">
-	    <label>Fecha Hecho</label>
-	    <input class="form-control" type="date">
-	    </div>
-		  <div class="col-md-3 my-1">
-		    <label>Ubigeo</label>
-		    <input class="form-control">
-	    </div>
-		  
-		  <div class="col-md-3 my-1">
-		    <label>Jurisdiccion Policial</label>
-		    <input class="form-control">
-		  </div>
-	    <div class="col-md-2 my-1">
-		  <label>Tipo Procedimiento</label>
-		  <select class="form-control">
-			<option>Ordinario</option>
-			<option>Sumario</option>
-			</select>
-		  </div>
-		  <div class="col-md-2 my-1">
-		    <label>Motivo </label>
-		    <select class="form-control">
-				<option>Ebriedad</option>
-				<option>Violencia Contra la Mujer</option>
-				<option>Ebriedad</option>
-			  </select>
-	    </div>
-		  <div class="col-md-8 my-1">
-		    <label>Detalle</label>
-		    <textarea class="form-control" rows="5"></textarea>
-	    </div>
-		  <div class="col-md-4 my-1">
-		    <label>Clasificación Adicional</label>
-		    <select class="form-control" multiple></select>
-	    </div>
-</div>
+
+	  
+	  
 </div>
   <div class="card-footer">
 	  <div class="row justify-content-end">
@@ -260,7 +245,152 @@ body {
     <!-- Content Row -->
     
     
-      
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Administrados</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row my-3">
+		  <div class="col-12 table-responsive">
+		  <table class="table table-hover table-bordered table-sm">
+			  <thead class="small">
+				  <tr>
+					  <th>CIP</th>
+					  <th>DNI</th>
+					  <th>Grado</th>
+					  <th>Apellidos y Nombres</th>
+					  <th>Unida</th>
+					  <th>Infracción</th>
+				  </tr>
+			  </thead>
+			  <tbody>
+			  <tr>
+					  <td class="small align-middle">00391305</td>
+					  <td class="small align-middle">43795932</td>
+					  <td class="small align-middle">CAPITAN S</td>
+					  <td class="small align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+					  <td class="small align-middle">IGPNP_UNITIC</td>
+					  <td class="small align-middle">
+						  <label class="badge badge-info">MG-15</label>
+						  <label class="badge badge-info">MG-16</label>
+						  <label class="badge badge-info">MG-17</label>
+				  </td>
+					  
+				  </tr>
+				  <tr>
+					  <td class="small align-middle">00391305</td>
+					  <td class="small align-middle">43795932</td>
+					  <td class="small align-middle">CAPITAN S</td>
+					  <td class="small align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+					  <td class="small align-middle">IGPNP_UNITIC</td>
+					  <td class="small align-middle">
+						  <label class="badge badge-info">MG-15</label>
+						  <label class="badge badge-info">MG-16</label>
+						  <label class="badge badge-info">MG-17</label>
+				  
+						  
+					  </td>
+					  
+				  </tr>
+				  <tr>
+					  <td class="small align-middle">00391305</td>
+					  <td class="small align-middle">43795932</td>
+					  <td class="small align-middle">CAPITAN S</td>
+					  <td class="small align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+					  <td class="small align-middle">IGPNP_UNITIC</td>
+					  <td class="small align-middle">
+						  
+					  </td>
+					  
+				  </tr>
+				  
+			  </tbody>
+			  </table>
+		  </div>
+	  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+	  <div class="modal fade" id="Modalmedidapreventiva" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Administrados</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row my-3">
+		  <div class="col-12 table-responsive">
+		  <table class="table table-hover table-bordered table-sm">
+			  <thead class="small">
+				  <tr>
+					  <th>CIP</th>
+					  <th>DNI</th>
+					  <th>Grado</th>
+					  <th>Apellidos y Nombres</th>
+					  <th>Unida</th>
+					  <th>Infracción</th>
+				  </tr>
+			  </thead>
+			  <tbody>
+			  <tr>
+					  <td class="small align-middle">00391305</td>
+					  <td class="small align-middle">43795932</td>
+					  <td class="small align-middle">CAPITAN S</td>
+					  <td class="small align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+					  <td class="small align-middle">IGPNP_UNITIC</td>
+					  <td class="small align-middle">
+						  <select class="form-control form-control-sm">
+							  <option>Ninguno</option>
+							  <option>Separación temporal del cargo</option>
+							  <option>Cese temporal del empleo</option>
+							  <option>Suspensión temporal del servicio</option>
+						  </select>
+				  </td>
+					  
+				  </tr>
+				  <tr>
+					  <td class="small align-middle">00391305</td>
+					  <td class="small align-middle">43795932</td>
+					  <td class="small align-middle">CAPITAN S</td>
+					  <td class="small align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+					  <td class="small align-middle">IGPNP_UNITIC</td>
+					  <td class="small align-middle">
+						  <select class="form-control form-control-sm">
+							  <option>Ninguno</option>
+							  <option>Separación temporal del cargo</option>
+							  <option>Cese temporal del empleo</option>
+							  <option>Suspensión temporal del servicio</option>
+						  </select>
+				  </td>
+					  
+				  </tr>
+				  
+			  </tbody>
+			  </table>
+		  </div>
+	  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+	  
   </div>
     <!-- Footer -->
   <footer class="py-5 bg-dark">

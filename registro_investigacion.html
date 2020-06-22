@@ -45,40 +45,124 @@ body {
 	<div class="card my-2">
   <div class="card-header">
 	  <div class="row align-items-center">
-      <div class="col-12">
-        <h3 class="font-weight-light">Documento de Origen</h3>
+      <div class="col-md-9 h5 my-2">
+        <div class="text-info">Invesigación Nro: <label>20205566550</label></div>
+		<small>HT: 2020565465546</small>  
+		
       </div>
+		  <div class="col-md-3">
+			  <label class="text-info">Fecha de Ingreso</label>
+		  <input class="form-control" type="date">
+		  </div>
+		  
       <!-- /.col-md-4 -->
     </div>
 </div>
   <div class="card-body">
+	  <div class="row">
+		  <div class="col-md-6 pt-2"><h5>Responsables de la Investigación</h5></div>
+		  
+		  <div class="col-md-2 offset-md-2">
+		  <button class="btn btn-outline-primary form-control"><em class="fa fa-user-plus"></em> Auxiliar</button>
+		  </div>
+		  <div class="col-md-2 ">
+		  <button class="btn btn-outline-primary form-control"><i class="fa fa-user-plus"></i> Instructor</button>
+		  </div>
+	  <div class="col-12 table-responsive">
+		 <table class="table table-bordered table-sm table-striped table-hover small my-2 ">
+		  <thead>
+			 <tr>
+				 <th>Tipo</th>
+				 <th>CIP</th>
+				 <th>Grado</th>
+				 <th>Apellidos y Nombres</th>
+				 <th class="text-center"><i class="fa fa-cogs"></i></th>
+			  </tr>
+			 </thead>
+			 <tbody>
+				 <tr>
+				 	<td class="align-middle">AUXILIAR</td>
+					<td class="align-middle">00391305</td>
+					<td class="align-middle">COMANDANTE</td>
+					<td class="align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+					<td class="align-middle text-center"><button class="btn btn-danger btn-sm"><i class="fa fa-user-times"></i></button></td>
+				 </tr>
+				 <tr>
+				 	<td class="align-middle">AUXILIAR</td>
+					<td class="align-middle">00391305</td>
+					<td class="align-middle">COMANDANTE</td>
+					<td class="align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
+					<td class="align-middle text-center"><button class="btn btn-danger btn-sm"><i class="fa fa-user-times"></i></button></td>
+				 </tr>
+			 </tbody>
+		  </table> 
+		 </div>
+	  </div>
+	  <div class="row">
+		  <div class="col-md-6 pt-2">
+		    <h5>Avance de la Investigación</h5>
+		  </div>
+		  
+		  <div class="col-md-2 offset-md-2">
+		  <button class="btn btn-outline-primary form-control"><em class="fa fa-user-plus"></em> Auxiliar</button>
+		  </div>
+		  <div class="col-md-2 ">
+		  <button class="btn btn-outline-primary form-control"><i class="fa fa-user-plus"></i> Instructor</button>
+		  </div>
+	  <div class="col-12 table-responsive">
+		 <table class="table table-bordered table-sm table-striped table-hover small my-2 ">
+		  <thead>
+			 <tr>
+				 <th>Etapa</th>
+				 <th>Tipo Documento</th>
+				 <th>Nro Documento</th>
+				 <th> Motivo</th>
+				 <th class="text-center"><i class="fa fa-cogs"></i></th>
+			  </tr>
+		    </thead>
+			 <tbody>
+				 <tr>
+				 	<td class="align-middle">Axiones Previas</td>
+					<td class="align-middle">Resolución</td>
+					<td class="align-middle">001-2020-DIRINV-OD15 (20/06/2020)</td>
+					<td class="align-middle">Inicio de Acciones Previas</td>
+					<td class="align-middle text-center"><button class="btn btn-danger btn-sm"><i class="fa fa-user-times"></i></button></td>
+				 </tr>
+				 <tr>
+				 	<td class="align-middle"> P.A.D</td>
+					<td class="align-middle">Resolución</td>
+					<td class="align-middle">002-2020-DIRINV-OD15 (21/06/2020)</td>
+					<td class="align-middle">Inicio de Procedimiento</td>
+					<td class="align-middle text-center"><button class="btn btn-danger btn-sm"><i class="fa fa-user-times"></i></button></td>
+				 </tr>
+				 <tr>
+				 	<td class="align-middle"> P.A.D</td>
+					<td class="align-middle">Resolución</td>
+					<td class="align-middle">002-2020-DIRINV-OD15 (21/06/2020)</td>
+					<td class="align-middle">Medida Preventiva</td>
+					<td class="align-middle text-center"><button class="btn btn-danger btn-sm"><i class="fa fa-user-times"></i></button></td>
+				 </tr>
+			 </tbody>
+		  </table> 
+	    </div>
+	  </div>
+	  
 <div class="row">
 		<div class="col-3">
-		<label>Tipo Origen</label>
+		<label>Etapa de la Investigacion</label>
 			<select class="form-control">
-				<option>Nota Informativa</option>
-				<option>Disposición de Comando</option>
-				<option>Denuncia Regular</option>
+				<option>Acciones Previas</option>
+				<option>Proc. Admin. Disc</option>
 			</select>
 		</div>
-		<div class="col-md-2">
-			<label>Documento Origen</label>
-			<div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="####" aria-label="####" aria-describedby="basic-addon2">
-  <div class="input-group-append">
-    <select class="form-control">
-		<option>2020</option>
-		<option>2019</option>
-	  </select>
-  </div>
-</div>
-		</div>
+		
 		<div class="col-md-3">
 			<label>Unidad</label>
 		<select class="form-control">
 			<option>Comandancia General</option>
 			</select>
 		</div>
+	
 		<div class="col-md-2">
 		<label>Fecha Registro</label>
 		<input class="form-control" type="date">
@@ -153,63 +237,13 @@ body {
 	    </div>
 		  <div class="col-md-8 my-1">
 		    <label>Detalle</label>
-		    <textarea class="form-control" rows="4"></textarea>
+		    <textarea class="form-control" rows="5"></textarea>
 	    </div>
 		  <div class="col-md-4 my-1">
 		    <label>Clasificación Adicional</label>
 		    <select class="form-control" multiple></select>
 	    </div>
 </div>
-	  <div class="row">
-		  <div class="col-12 table-responsive">
-		  <table class="table table-hover table-bordered table-sm">
-			  <thead class="small">
-				  <tr>
-					  <th>CIP</th>
-					  <th>DNI</th>
-					  <th>Grado</th>
-					  <th>Apellidos y Nombres</th>
-					  <th>Unida</th>
-					  <th>Situacion</th>
-					  <th>Clasificación</th>
-					  <th class="text-center"><i class="fa fa-user-times"></i></th>
-				  </tr>
-			  </thead>
-			  <tbody>
-			  <tr>
-					  <td class="small align-middle">00391305</td>
-					  <td class="small align-middle">43795932</td>
-					  <td class="small align-middle">CAPITAN S</td>
-					  <td class="small align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
-					  <td class="small align-middle">IGPNP_UNITIC</td>
-					  <td class="small align-middle">ACTIVIDAD</td>
-					  <td class="align-middle">
-						  <label class="badge badge-info">Ebriedad</label>
-						  <label class="badge badge-info">Violencia Familiar</label>
-				  	  </td>
-				  		<td class="text-center align-middle">
-				  <button class="btn btn-secondary btn-sm"><i class="fa fa-user-times"></i></button>
-				  </td>
-				  </tr>
-				  <tr>
-					  <td class="small align-middle">00391305</td>
-					  <td class="small align-middle">43795932</td>
-					  <td class="small align-middle">CAPITAN S</td>
-					  <td class="small align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
-					  <td class="small align-middle">IGPNP_UNITIC</td>
-					  <td class="small align-middle">ACTIVIDAD</td>
-					  <td class="align-middle">
-						  <label class="badge badge-info">Ebriedad</label>
-						  <label class="badge badge-info">Violencia Familiar</label>
-				  	  </td>
-				  		<td class="text-center align-middle">
-				  <button class="btn btn-secondary btn-sm"><i class="fa fa-user-times"></i></button>
-				  </td>
-				  </tr>
-			  </tbody>
-			  </table>
-		  </div>
-	  </div>
 </div>
   <div class="card-footer">
 	  <div class="row justify-content-end">

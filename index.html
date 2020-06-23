@@ -44,12 +44,16 @@ body {
   <div class="container">
 
     <!-- Heading Row -->
-    <div class="row align-items-center my-5">
+    <div class="row align-items-center my-2">
       <div class="col-12">
         <h1 class="font-weight-light">Registro de Investigaciones / Expedientes AD</h1>
       </div>
       <!-- /.col-md-4 -->
     </div>
+	  <div class="row justify-content-end my-2">
+	  	<div class="col-md-2"><button id="nuevoregistro" class="btn btn-primary btn-sm form-control form-control-sm pull-right "><i class="fa fa-file"></i> Nuevo Registro</button></div>
+	  </div>
+	  
     <!-- /.row -->
 
 
@@ -60,66 +64,78 @@ body {
 			<table id="tabla-registros" class="table table-bordered table-sm small">
 						<thead class="bg-light">
 							<tr class="text-center">
-								<th rowspan="2" class="align-middle"><i class="fa fa-eye"></i></th>
-								<th rowspan="2" class="align-middle">Hoja de Trámite</th>
+								<th class="align-middle"><i class="fa fa-eye"></i></th>
+								<th class="align-middle">Hoja de Trámite</th>
 								
-								<th colspan="4" class="align-middle">Denuncia / Comunicacion</th>
+								<th class="align-middle">Documento de Origen</th>
+								<th class="align-middle">Ubigeo del Hecho</th>
+							  <th class="align-middle">Clasificación del Hecho</th>
 								
-								<th colspan="4" class="align-middle">Datos del Hecho</th>
-								<th colspan="5" class="align-middle">Investigacion</th>
-								<th rowspan="2" class="align-middle">Estado</th>
-								<th rowspan="2" class="align-middle"><i class="fa fa-cogs"></i></th>
+								<th class="align-middle">Procedimiento</th>
 								
-							</tr>
-							<tr class="text-center">
-								<th class="align-middle">Tipo</th>
-								<th class="align-middle">Fecha</th>
-								<th class="align-middle">Datos</th>
-								<th class="align-middle">Tipo <br>Procedimiento</th>
-								<th class="align-middle">Ubigeo</th>
-							  <th class="align-middle">Fecha - Hora</th>
-								<th class="align-middle">Jurisdiccion Policial</th>
-								<th class="align-middle">Motivo</th>
-								<th class="align-middle">Unidad a Cargo</th>
-								<th class="align-middle">Fecha Recepción</th>
-								<th class="align-middle">Responsables</th>
-								<th class="align-middle">Acciones <br>Previas</th>
-								<th class="align-middle">Inicio <br>
-							    PAD<br></th>
-							</tr>
+								<th class="align-middle">Etapa</th>								<th class="align-middle"><i class="fa fa-cogs"></i> Funciones</th>
+								
+						  </tr>
+							
 						</thead>
-						<tbody>
-							<tr class="text-center">
-								<td class="align-middle"><a class="btn-adddetalle"> <em class="fa fa-plus"></em></a></td>
-								<td class="align-middle">20201234567<br><label>(13/06/2020)</label></td>
-								<td class="align-middle">N. I. </td>
-								<td class="align-middle">12/06/2020</td>
-								<td class="align-middle"><button class="btn btn-info btn-sm"><i class="fa fa-file-text-o"></i></button>
-								<button class="btn btn-info btn-sm"><i class="fa fa-user-o"></i></button></td>
+						<tbody>							<tr class="text-center">
+						  <td class="align-middle"><a class="btn-adddetalle"> <em class="fa fa-plus"></em></a></td>
+								<td class="align-middle">20201234567<br><small>(23/06/2020)</small></td>								<td class="align-middle">N. I. 123-2020-COMGEN <br><small>(23/06/2020)</small></td>
 								
-								<td class="align-middle">Ordinario</td>
-								<td class="align-middle">LIMA - LIMA - SAN MARTIN DE PORRES</td>
+								
+								<td class="align-middle">LIMA - LIMA - SAN MARTIN DE PORRES<br><small>(23/06/2020)</small></td>
 
-								<td class="align-middle">12/06/2020</td>
-								<td class="align-middle">REGPOL-LIMA COMISARIA DE APOLO</td>
-								<td class="align-middle">Violencia Familiar <button class="btn btn-info btn-sm"><i class="fa fa-folder-open-o"></i></button></td>
-								<td class="align-middle">OD - 14</td>
-								<td class="align-middle">12/06/2020</td>
+							<td class="align-middle">Violencia Familiar <br><small>(Ley 30714)</small></td>
+								
+							  
+								
+								<td class="align-middle">Sumario</td>
+								
+								<td class="align-middle">Acciones Previas</td>
 								<td class="align-middle">
-									<button class="btn btn-info btn-sm"><i class="fa fa-users"></i> 1</button>
+									<button class="btn btn-warning btn-sm"><i class="fa fa-floppy-o"></i></button>
+									<button class="btn btn-info btn-sm"><i class="fa fa-file-text-o"></i></button>
 								</td>
-								<td class="align-middle"><button class="btn btn-info btn-sm"><i class="fa fa-file-text-o"></i></button></td>
-								<td class="align-middle"><button class="btn btn-info btn-sm"><i class="fa fa-file-text-o"></i></button></td>
-								<td class="align-middle">EN INVESTIGACIÓN</td>
-								<td class="align-middle"><button class="btn btn-warning btn-sm"><i class="fa fa-floppy-o"></i></button></td>
 							</tr>
 							
 						</tbody>
 					</table>
 		</div>
+			<ul class="pagination justify-content-end">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
 		</div>
      </div>
-    
+  
+	  <div class="modal fade" id="ModalHT" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">Ingreso / Validación HT</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+			<div class="col-md-4">
+				<label class="small">Nro HT</label>
+				<input class="form-control form-control-sm">
+			</div>
+		  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+	  
   </div>
     <!-- Footer -->
   <footer class="py-5 bg-dark">

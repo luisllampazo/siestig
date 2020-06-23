@@ -12,6 +12,7 @@
 
   <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/select2.min.css">	
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <style>
 body {
@@ -276,9 +277,11 @@ body {
 					  <td class="small align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
 					  <td class="small align-middle">IGPNP_UNITIC</td>
 					  <td class="small align-middle">
-						  <label class="badge badge-info">MG-15</label>
-						  <label class="badge badge-info">MG-16</label>
-						  <label class="badge badge-info">MG-17</label>
+						  <select class="selectinfraccion" multiple>
+							  <option>G1</option>
+							  <option>G2</option>
+							  <option>G3</option>
+						  </select>
 				  </td>
 					  
 				  </tr>
@@ -289,9 +292,11 @@ body {
 					  <td class="small align-middle">LLAMPAZO MANDAMIENTO LUIS RICARDO</td>
 					  <td class="small align-middle">IGPNP_UNITIC</td>
 					  <td class="small align-middle">
-						  <label class="badge badge-info">MG-15</label>
-						  <label class="badge badge-info">MG-16</label>
-						  <label class="badge badge-info">MG-17</label>
+						  <select class="selectinfraccion" multiple>
+							  <option>G1</option>
+							  <option>G2</option>
+							  <option>G3</option>
+						  </select>
 				  
 						  
 					  </td>
@@ -325,7 +330,7 @@ body {
   <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Administrados</h5>
+        <h5 class="modal-title" >Administrados</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -341,7 +346,7 @@ body {
 					  <th>Grado</th>
 					  <th>Apellidos y Nombres</th>
 					  <th>Unida</th>
-					  <th>Infracción</th>
+					  <th>Medida Preventiva</th>
 				  </tr>
 			  </thead>
 			  <tbody>
@@ -404,7 +409,12 @@ body {
 		<script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/popper.min.js" ></script>
 	<script src="js/bootstrap.min.js"></script>
-
+<script src="js/select2.min.js"></script>
+	<script>
+		$('.selectinfraccion').select2({
+			 width: '100%'
+		});
+	</script>
 </body>
 
 </html>
